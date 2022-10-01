@@ -48,6 +48,6 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessFilament(): bool
     {
-        return $this->getAttribute('email') == 'admin@cefest.com' && $this->hasVerifiedEmail();
+        return $this->getAttribute('email') == 'admin@cefestglobal.com' && $this->hasVerifiedEmail();
     }
 }
