@@ -1,0 +1,67 @@
+{
+    "name": "ryangjchandler/filament-log",
+    "description": "A simplistics log viewer for your Filament apps.",
+    "keywords": [
+        "ryangjchandler",
+        "laravel",
+        "filament-log"
+    ],
+    "homepage": "https://github.com/ryangjchandler/filament-log",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Chandler",
+            "email": "support@ryangjchandler.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "spatie/laravel-package-tools": "^1.9.2",
+        "filament/filament": "^2.0",
+        "illuminate/contracts": "^9.0"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "RyanChandler\\FilamentLog\\": "src",
+            "RyanChandler\\FilamentLog\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RyanChandler\\FilamentLog\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RyanChandler\\FilamentLog\\FilamentLogServiceProvider"
+            ],
+            "aliases": {
+                "FilamentLog": "RyanChandler\\FilamentLog\\Facades\\FilamentLog"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

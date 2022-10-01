@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/a43uaqtjqbw8/public_html/test.cefestglobal.com/
+    - /bin/git reset --hard HEAD

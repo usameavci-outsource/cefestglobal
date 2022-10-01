@@ -15,20 +15,21 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'e1e8b49c332434256b5df11b0f0c2a62' => __DIR__ . '/..' . '/league/uri-parser/src/functions_include.php',
-        '29ffe97919493792170d47eb03a68da9' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/helpers.php',
         'e125f489d647ae664b0af7b573079de7' => __DIR__ . '/..' . '/filament/support/src/helpers.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
+        '29ffe97919493792170d47eb03a68da9' => __DIR__ . '/..' . '/blade-ui-kit/blade-icons/src/helpers.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '9261e07cd92c53dcc971c7c88c176c04' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/helpers.php',
         '9720327d09ed9a4ba00c9b5071b71c7d' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/standards.php',
         '2ad94ea6f6f6013119e9abcf4e302a08' => __DIR__ . '/..' . '/filament/forms/src/helpers.php',
+        'eee56a36884c3af04e64bac85043e771' => __DIR__ . '/..' . '/akaunting/laravel-money/src/helpers.php',
+        '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        'eee56a36884c3af04e64bac85043e771' => __DIR__ . '/..' . '/akaunting/laravel-money/src/helpers.php',
+        'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -36,7 +37,6 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
@@ -54,6 +54,7 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'i' => 
         array (
             'io3x1\\FilamentCommands\\' => 23,
+            'io3x1\\FilamentBrowser\\' => 22,
         ),
         'W' => 
         array (
@@ -104,6 +105,8 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         ),
         'R' => 
         array (
+            'RyanChandler\\FilamentLog\\Database\\Factories\\' => 44,
+            'RyanChandler\\FilamentLog\\' => 25,
             'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 54,
             'RyanChandler\\BladeCaptureDirective\\' => 35,
             'Ramsey\\Uuid\\' => 12,
@@ -213,6 +216,10 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'io3x1\\FilamentCommands\\' => 
         array (
             0 => __DIR__ . '/..' . '/3x1io/filament-commands/src',
+        ),
+        'io3x1\\FilamentBrowser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/3x1io/filament-browser/src',
         ),
         'Whoops\\' => 
         array (
@@ -365,6 +372,14 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'Spatie\\Backtrace\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
+        ),
+        'RyanChandler\\FilamentLog\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ryangjchandler/filament-log/database/factories',
+        ),
+        'RyanChandler\\FilamentLog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ryangjchandler/filament-log/src',
         ),
         'RyanChandler\\BladeCaptureDirective\\Database\\Factories\\' => 
         array (
@@ -5251,6 +5266,8 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirective' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirective.php',
         'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider' => __DIR__ . '/..' . '/ryangjchandler/blade-capture-directive/src/BladeCaptureDirectiveServiceProvider.php',
+        'RyanChandler\\FilamentLog\\FilamentLogServiceProvider' => __DIR__ . '/..' . '/ryangjchandler/filament-log/src/FilamentLogServiceProvider.php',
+        'RyanChandler\\FilamentLog\\Logs' => __DIR__ . '/..' . '/ryangjchandler/filament-log/src/Logs.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -6548,6 +6565,9 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'io3x1\\FilamentBrowser\\FilamentBrowserProvider' => __DIR__ . '/..' . '/3x1io/filament-browser/src/FilamentBrowserProvider.php',
+        'io3x1\\FilamentBrowser\\Http\\Controllers\\BrowserController' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Http/Controllers/BrowserController.php',
+        'io3x1\\FilamentBrowser\\Pages\\Browser' => __DIR__ . '/..' . '/3x1io/filament-browser/src/Pages/Browser.php',
         'io3x1\\FilamentCommands\\FilamentCommandsProvider' => __DIR__ . '/..' . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
         'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
         'io3x1\\FilamentCommands\\Pages\\Artisan' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Pages/Artisan.php',
