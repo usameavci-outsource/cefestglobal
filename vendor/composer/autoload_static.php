@@ -51,6 +51,10 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         array (
             'voku\\' => 5,
         ),
+        'i' => 
+        array (
+            'io3x1\\FilamentCommands\\' => 23,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -205,6 +209,10 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'io3x1\\FilamentCommands\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/3x1io/filament-commands/src',
         ),
         'Whoops\\' => 
         array (
@@ -6540,6 +6548,9 @@ class ComposerStaticInitffbdaac3cfc4e06fb7cfcd060d69aa8f
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'io3x1\\FilamentCommands\\FilamentCommandsProvider' => __DIR__ . '/..' . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
+        'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
+        'io3x1\\FilamentCommands\\Pages\\Artisan' => __DIR__ . '/..' . '/3x1io/filament-commands/src/Pages/Artisan.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

@@ -3,13 +3,22 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '434a7e113110f7393ce4cb0a630746a2ce0d008b',
+        'reference' => '9f01f259c6b406f429448315bd491b2cb3c3400d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        '3x1io/filament-commands' => array(
+            'pretty_version' => 'v1.1.1',
+            'version' => '1.1.1.0',
+            'reference' => 'ee3c6d53becce3be6c8355714dbeef675c9a1980',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../3x1io/filament-commands',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'akaunting/laravel-money' => array(
             'pretty_version' => '3.1.2',
             'version' => '3.1.2.0',
@@ -466,7 +475,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '434a7e113110f7393ce4cb0a630746a2ce0d008b',
+            'reference' => '9f01f259c6b406f429448315bd491b2cb3c3400d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

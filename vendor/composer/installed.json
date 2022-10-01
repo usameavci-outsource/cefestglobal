@@ -1,6 +1,50 @@
 {
     "packages": [
         {
+            "name": "3x1io/filament-commands",
+            "version": "v1.1.1",
+            "version_normalized": "1.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/3x1io/filament-commands.git",
+                "reference": "ee3c6d53becce3be6c8355714dbeef675c9a1980"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/3x1io/filament-commands/zipball/ee3c6d53becce3be6c8355714dbeef675c9a1980",
+                "reference": "ee3c6d53becce3be6c8355714dbeef675c9a1980",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "time": "2022-04-03T14:00:18+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "io3x1\\FilamentCommands\\FilamentCommandsProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "io3x1\\FilamentCommands\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Beautiful package for [laravel:artisan] gui for cool kids.",
+            "support": {
+                "issues": "https://github.com/3x1io/filament-commands/issues",
+                "source": "https://github.com/3x1io/filament-commands/tree/v1.1.1"
+            },
+            "install-path": "../3x1io/filament-commands"
+        },
+        {
             "name": "akaunting/laravel-money",
             "version": "3.1.2",
             "version_normalized": "3.1.2.0",

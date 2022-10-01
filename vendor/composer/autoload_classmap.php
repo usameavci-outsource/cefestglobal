@@ -5933,5 +5933,8 @@ return array(
     'Whoops\\Util\\Misc' => $vendorDir . '/filp/whoops/src/Whoops/Util/Misc.php',
     'Whoops\\Util\\SystemFacade' => $vendorDir . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+    'io3x1\\FilamentCommands\\FilamentCommandsProvider' => $vendorDir . '/3x1io/filament-commands/src/FilamentCommandsProvider.php',
+    'io3x1\\FilamentCommands\\Http\\Controllers\\GuiController' => $vendorDir . '/3x1io/filament-commands/src/Http/Controllers/GuiController.php',
+    'io3x1\\FilamentCommands\\Pages\\Artisan' => $vendorDir . '/3x1io/filament-commands/src/Pages/Artisan.php',
     'voku\\helper\\ASCII' => $vendorDir . '/voku/portable-ascii/src/voku/helper/ASCII.php',
 );
