@@ -29,7 +29,7 @@ module.exports = {
                 'section-social-responsibility': "url('../../../public/assets/svg/social-responsibility.svg')",
             },
             backgroundPosition: {
-                'section-transportation-size': "-6rem -10rem",
+                'section-transportation-size': "25rem -5rem",
                 'section-social-responsibility': "-6rem 14rem",
             },
             boxShadow: {

@@ -85,7 +85,7 @@
     pt-80
     pb-[32rem]
     bg-no-repeat
-    bg-[length:115%]
+    bg-[length:75%]
     bg-section-transportation
     bg-section-transportation-size
 }
@@ -114,6 +114,7 @@
     @apply
     flex
     gap-8
+    pb-40
 }
 
 .section-transportation .content-blocks .content-left {
@@ -158,6 +159,7 @@
 .page-logistics .section-collage {
     @apply
     -mt-56
+    pb-56
 }
 
 .page-logistics .section-collage img {
