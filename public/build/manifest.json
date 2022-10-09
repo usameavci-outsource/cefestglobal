@@ -1,27 +1,32 @@
 {
-  "public/assets/brand/soft-bg.svg": {
-    "file": "assets/soft-bg.4edc0436.svg",
-    "src": "public/assets/brand/soft-bg.svg"
-  },
   "public/assets/svg/social-responsibility.svg": {
     "file": "assets/social-responsibility.07e2a278.svg",
     "src": "public/assets/svg/social-responsibility.svg"
+  },
+  "public/assets/brand/soft-bg.svg": {
+    "file": "assets/soft-bg.4edc0436.svg",
+    "src": "public/assets/brand/soft-bg.svg"
   },
   "public/assets/images/technology-bg.jpg": {
     "file": "assets/technology-bg.64396a88.jpg",
     "src": "public/assets/images/technology-bg.jpg"
   },
-  "public/assets/images/logistics-bg.jpg": {
-    "file": "assets/logistics-bg.34b34ecf.jpg",
-    "src": "public/assets/images/logistics-bg.jpg"
-  },
   "public/assets/images/mission-vision-bg.png": {
     "file": "assets/mission-vision-bg.fef796ad.png",
     "src": "public/assets/images/mission-vision-bg.png"
   },
+  "public/assets/images/logistics-bg.jpg": {
+    "file": "assets/logistics-bg.34b34ecf.jpg",
+    "src": "public/assets/images/logistics-bg.jpg"
+  },
   "resources/js/app.js": {
-    "file": "assets/app.b4859d77.js",
+    "file": "assets/app.40589ff6.js",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/views/vendor/mail/html/themes/default.css": {
+    "file": "assets/default.82540e4d.css",
+    "src": "resources/views/vendor/mail/html/themes/default.css",
     "isEntry": true
   },
   "resources/css/app.css": {
@@ -34,11 +39,6 @@
     "src": "resources/css/pages/contact.css",
     "isEntry": true
   },
-  "resources/css/pages/technology.css": {
-    "file": "assets/technology.cbeb9aad.css",
-    "src": "resources/css/pages/technology.css",
-    "isEntry": true
-  },
   "resources/css/pages/index.css": {
     "file": "assets/index.1f81c6bb.css",
     "src": "resources/css/pages/index.css",
@@ -47,6 +47,11 @@
   "resources/css/pages/logistics.css": {
     "file": "assets/logistics.05383e9d.css",
     "src": "resources/css/pages/logistics.css",
+    "isEntry": true
+  },
+  "resources/css/pages/technology.css": {
+    "file": "assets/technology.cbeb9aad.css",
+    "src": "resources/css/pages/technology.css",
     "isEntry": true
   }
 }
