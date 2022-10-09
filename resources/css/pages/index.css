@@ -74,6 +74,8 @@
 .page-index .mission-vision-inner {
     @apply
     grid
+    py-48
+    -mx-28
     gap-40
     grid-cols-2
 }
