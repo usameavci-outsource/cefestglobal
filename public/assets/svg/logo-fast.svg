@@ -1,0 +1,25 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.36 433.53">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#fff}.cls-2{font-size:57.66px}</style>
+    </defs>
+    <g id="Layer_1-2" data-name="Layer 1">
+        <path style="fill:#f60" d="M0 0h317.36v433.53H0z"/>
+        <text class="cls-2" transform="translate(53.77 326.13)">
+            <tspan x="0" y="0" style="letter-spacing:-.03em">t</tspan>
+            <tspan x="17.53" y="0" style="letter-spacing:0">ecrübeli</tspan>
+        </text>
+        <text class="cls-2" transform="translate(191.36 202.73)">
+            <tspan x="0" y="0">hızlı</tspan>
+        </text>
+        <text class="cls-2" transform="translate(102.21 262.35)">
+            <tspan x="0" y="0">gü</tspan>
+            <tspan x="64.01" y="0" style="letter-spacing:-.02em">v</tspan>
+            <tspan x="90.59" y="0" style="letter-spacing:-.01em">e</tspan>
+            <tspan x="118.67" y="0">nli</tspan>
+        </text>
+        <path class="cls-1"
+              d="M24.19 110.89c-1.06-.86-.05-2.53 1.2-1.99 10.29 4.39 29.32 10.25 50.98 5.81 25.49-5.21 63.53-55.1 78.74-76.36.82-1.15 2.61-.13 2.03 1.16-10.89 24.35-39.34 82.61-65.89 91.89-25.83 9.03-54.27-10.17-67.06-20.51"/>
+        <path class="cls-1"
+              d="M37.99 134.71c-.29-.38-.43-.8-.23-1.21.4-.78 1.57-.51 2.36-.13 12.83 6.07 27.66 10.83 41.95 11.07 16.26.27 29.4-8.77 42.14-17.91 12.93-9.28 25.04-19.73 36.49-30.77.83-.8 2.1.27 1.46 1.22-9.31 13.97-19.35 27.58-31.19 39.53-10.63 10.73-23.84 23.46-39.84 23.84-5.76.14-11.14-1.43-16.44-3.53-12.98-5.15-24.58-13.2-35.91-21.37-.28-.2-.58-.46-.79-.75"/>
+    </g>
+</svg>

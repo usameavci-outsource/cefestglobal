@@ -1,0 +1,129 @@
+.header {
+    @apply
+    flex
+    gap-6
+    flex-nowrap
+}
+
+.header.header-over-main {
+    @apply
+    -mb-24
+}
+
+.header .page-container {
+    @apply
+    flex-shrink-0
+}
+
+.header-left {
+    @apply
+    flex-shrink-0
+    w-[calc((100%-1140px)/2-1.5rem)];
+}
+
+.header-main {
+    @apply
+    flex
+    py-4
+    px-24
+    w-full
+    h-full
+    bg-[#e7e7e7]
+    items-center
+    shadow-header
+    justify-between
+    rounded-bl-[80px]
+    rounded-br-[80px]
+}
+
+.header-logo {
+    @apply
+    flex-1
+}
+
+.header-logo img {
+    @apply
+    h-12
+}
+
+.header-nav {
+    @apply
+    flex
+    items-center
+    justify-around
+}
+
+.header-nav a {
+    @apply
+    py-1
+    px-6
+    text-xl
+    inline-flex
+    font-semibold
+    cursor-pointer
+    text-[#5d2166]
+}
+
+.header-nav a + a {
+    @apply
+    border-l
+    border-l-gray-700
+}
+
+.header-right {
+    @apply
+    flex
+    items-center
+    flex-shrink-0
+    w-[calc((100%-1140px)/2-1.5rem)];
+}
+
+.header-search {
+    @apply
+    flex
+    gap-3
+    w-full
+    max-w-xs
+}
+
+.header-search .header-search-input {
+    @apply
+    px-6
+    flex-1
+    text-xs
+    border-0
+    max-w-sm
+    shadow-none
+    rounded-full
+    bg-[#e7e7e7]
+}
+
+.header-search .header-search-submit {
+    @apply
+    w-9
+    h-9
+    rounded-full
+    bg-orange-500
+}
+
+.header-search .header-search-submit i {
+    @apply
+    font-bold
+    rotate-90
+    text-white
+}
+
+.header-white .header-search .header-search-input {
+    @apply
+    bg-white
+}
+
+.header-white .header-search .header-search-submit {
+    @apply
+    bg-white
+}
+
+.header-white .header-search .header-search-submit i {
+    @apply
+    text-gray-700
+}

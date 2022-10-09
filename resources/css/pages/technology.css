@@ -1,0 +1,51 @@
+@import "../global.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.page-technology {
+    @apply
+    mb-24
+    pt-24
+    bg-cover
+    bg-no-repeat
+    bg-technology
+}
+
+.page-technology .section-jumbotron {
+    @apply
+    flex
+    py-24
+    mt-32
+    bg-white
+    items-center
+    justify-center
+}
+
+.page-technology .section-jumbotron img {
+    @apply
+    h-48
+}
+
+.page-technology .section-under-construction {
+    @apply
+    py-40
+}
+
+.page-technology .section-under-construction-wrap {
+    @apply
+    flex
+    py-24
+    bg-white/[0.8]
+    items-center
+    justify-center
+}
+
+.page-technology .section-under-construction h2 {
+    @apply
+    text-7xl
+}

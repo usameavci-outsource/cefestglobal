@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Container\BindingResolutionException;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -10,10 +11,11 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      *
      * @return void
+     * @throws BindingResolutionException
      */
-    public function register()
+    public function register(): void
     {
-        //
+        $this->app->make('view')->addNamespace('mail', resource_path('views/vendor/mail/html'));
     }
 
     /**
@@ -21,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         //
     }

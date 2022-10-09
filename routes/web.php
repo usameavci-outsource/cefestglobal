@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use App\Mail\ContactMessageMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +16,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'pages.index')->name('index');
+Route::view('/cefest-bilisim', 'pages.technology')->name('technology');
+Route::view('/cefest-lojistik', 'pages.logistics')->name('logistics');
+Route::view('/servisler', 'pages.services')->name('services');
+Route::view('/iletisim', 'pages.contact')->name('contact');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::post('/iletisim', function (Request $request) {
+    try {
+        $mail = new ContactMessageMail(
+            $request->get('email'),
+            $request->get('fullname'),
+            $request->get('message')
+        );
 
-require __DIR__.'/auth.php';
+        Mail::send($mail);
+
+        toast('Mesajınız başarıyla gönderildi!', 'success');
+
+        return redirect()->route('index');
+    } catch (Exception) {
+        toast('Bir hata oluştu lütfen daha sonra tekrar deneyiniz.', 'error');
+        return redirect()->back();
+    }
+})->name('contact-post');
+
+Route::view('/dashboard', 'dashboard')->middleware(['auth', 'verified'])->name('dashboard');
+
+require __DIR__ . '/auth.php';

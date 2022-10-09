@@ -1,0 +1,97 @@
+.footer {
+}
+
+.footer .footer-top .page-container {
+    @apply
+    py-16
+    border-t
+    border-gray-700
+}
+
+.footer .footer-services {
+    @apply
+    grid
+    gap-4
+    grid-cols-3
+}
+
+.footer .footer-services-item + .footer-services-item {
+    @apply
+    border-l
+    border-gray-700
+    flex
+    justify-center
+}
+
+.footer .footer-services-item img {
+    @apply
+    h-12
+}
+
+.footer-contact {
+    @apply
+    flex
+    py-4
+    gap-24
+    items-center
+    justify-center
+    bg-[#e5e5e5]
+}
+
+
+.footer-contact .footer-contact-item {
+    @apply
+    py-4
+    flex
+    gap-4
+    items-center
+}
+
+.footer-contact .footer-contact-item i {
+    @apply
+    w-6
+    h-6
+    flex
+    text-white
+    rounded-lg
+    justify-center
+    items-center
+    bg-[#ff6600]
+}
+
+.footer-contact .footer-contact-item span {
+    @apply
+    text-2xl
+}
+
+.footer-social {
+    @apply
+    flex
+    py-8
+    gap-12
+    items-center
+    justify-center
+}
+
+.footer-social .footer-social-item {
+    @apply
+    inline-flex
+}
+
+.footer-social .footer-social-item img {
+    @apply
+    h-8
+}
+
+
+.footer-copyright {
+    @apply
+    text-center
+}
+
+.footer-copyright .page-container {
+    @apply
+    border-t
+    border-gray-700
+    py-8
+}

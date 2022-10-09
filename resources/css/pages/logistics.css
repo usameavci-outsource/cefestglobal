@@ -1,0 +1,662 @@
+@import "../global.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.page-logistics {
+    @apply
+    mb-24
+}
+
+.page-logistics .page-top {
+    @apply
+    pt-24
+    bg-cover
+    bg-no-repeat
+    bg-logistics
+}
+
+.page-logistics .section-jumbotron {
+    @apply
+    flex
+    py-32
+    mt-32
+    bg-white
+    items-center
+    justify-center
+}
+
+.page-logistics .section-jumbotron img {
+    @apply
+    h-40
+}
+
+.page-logistics .section-features {
+    @apply
+    py-48
+}
+
+.page-logistics .section-features-inner {
+    @apply
+    py-4
+    bg-white/[.6]
+}
+
+.features {
+    @apply
+    flex
+    gap-8
+    flex-wrap
+    text-white
+    text-center
+    items-center
+    justify-center
+}
+
+.features .features-item {
+    @apply
+    p-6
+    bg-white
+    shadow-md
+    rounded-4xl
+}
+
+.features .features-item img {
+    @apply
+    w-16
+    h-16
+}
+
+.page-logistics .section-intro-video {
+    @apply
+    flex
+    items-center
+    bg-[#e5df67]
+    min-h-[50rem]
+    justify-center
+}
+
+.page-logistics .section-transportation {
+    @apply
+    pt-80
+    pb-[32rem]
+    bg-no-repeat
+    bg-[length:115%]
+    bg-section-transportation
+    bg-section-transportation-size
+}
+
+.section-transportation .content-title {
+    @apply
+    pl-24
+    mb-16
+    relative
+    text-8xl
+    font-bold
+    text-[#ff6600]
+}
+
+.section-transportation .content-title::before {
+    top: 60%;
+    right: 99%;
+    width: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 1px solid #000;
+}
+
+.section-transportation .content-blocks {
+    @apply
+    flex
+    gap-8
+}
+
+.section-transportation .content-blocks .content-left {
+    @apply
+    relative
+    w-[120rem]
+}
+
+.section-transportation .content-blocks .content-left img {
+}
+
+.section-transportation .content-blocks .content-right {
+    @apply
+    pt-8
+    relative
+    after:block
+    after:left-0
+    after:border-b
+    after:absolute
+    after:w-[50rem]
+    after:content-['']
+    after:bottom-[5.5rem]
+    after:border-gray-700
+}
+
+.section-transportation .content-blocks .content-right p {
+    @apply
+    pl-8
+    text-lg
+}
+
+.section-transportation .content-blocks .content-right p::first-letter {
+    @apply
+    ml-16
+}
+
+.section-transportation .content-blocks .content-right p + p {
+    @apply
+    mt-8
+}
+
+.page-logistics .section-collage {
+    @apply
+    -mt-56
+}
+
+.page-logistics .section-collage img {
+    @apply
+    w-full
+}
+
+
+.page-logistics .section-services {
+}
+
+.section-services .content-title-wrapper {
+    @apply
+    flex
+    mb-16
+    items-center
+    justify-center
+}
+
+.section-services .content-title {
+    @apply
+    text-9xl
+    relative
+    after:block
+    after:border-b
+    after:absolute
+    after:w-full
+    after:top-[50%]
+    after:right-[110%]
+    after:content-['']
+    after:border-gray-700
+}
+
+.section-services .slider {
+    @apply
+    flex
+}
+
+.section-services .slider .slider-content {
+    @apply
+    mt-32
+    w-[65%]
+    mr-[5%]
+}
+
+.section-services .slider .slider-content .slider-content-wrap {
+    @apply
+    flex
+    gap-4
+    flex-col
+    flex-auto
+}
+
+.section-services .slider .slider-content .slider-content-wrap p + p,
+.section-services .slider .slider-content .slider-content-wrap p + ul {
+    @apply
+    mt-4
+}
+
+.section-services .slider .slider-content .slider-content-image {
+    @apply
+    flex
+    p-4
+    w-32
+    h-32
+    bg-white
+    flex-none
+    rounded-4xl
+    items-center
+    justify-center
+}
+
+.section-services .slider .slider-content .slider-content-image .slider-content-image-default {
+    @apply
+    inline
+}
+
+.section-services .slider .slider-content .slider-content-image .slider-content-image-active {
+    @apply
+    hidden
+}
+
+.section-services .slider .slider-content .slider-content-list {
+    @apply
+    flex
+    gap-8
+    flex-col
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item {
+    @apply
+    pl-20
+    pr-4
+    py-4
+    flex
+    gap-8
+    text-white
+    items-center
+    bg-[#898889]
+    rounded-tr-4xl
+    rounded-br-4xl
+    border-[#898889]
+    border-t-[0.8rem]
+    border-r-[0.8rem]
+    border-b-[0.8rem]
+    shadow-slider-content-item
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-title {
+    @apply
+    text-5xl
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-text {
+    @apply
+    hidden
+}
+
+.section-services .slider .slider-image {
+    @apply
+    w-[30%]
+}
+
+.section-services .slider .slider-image img {
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item.active {
+    @apply
+    z-10
+    pr-12
+    py-12
+    relative
+    text-black
+    mr-[-32rem]
+    border-white
+    bg-[#e5df68]
+    rounded-tr-6xl
+    rounded-br-6xl
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-text {
+    @apply
+    block
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image {
+    @apply
+    p-12
+    w-[18rem]
+    h-[18rem]
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image .slider-content-image-default {
+    @apply
+    hidden
+}
+
+.section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image .slider-content-image-active {
+    @apply
+    inline
+}
+
+.section-services .offer-button-wrapper {
+    @apply
+    flex
+    py-64
+    justify-center
+}
+
+.section-services .offer-button {
+    @apply
+    flex
+    py-9
+    px-24
+    w-[50%]
+    text-7xl
+    font-bold
+    shadow-2xl
+    text-white
+    rounded-full
+    bg-[#e5df68]
+    items-center
+    justify-center
+}
+
+.page-logistics .section-social-responsibility {
+    @apply
+    pt-32
+    mb-32
+    relative
+    bg-[#b31110]
+    bg-no-repeat
+    bg-[length:40rem]
+    bg-section-social-responsibility
+}
+
+.section-social-responsibility .social-responsibility-title-wrapper {
+    @apply
+    flex
+    mb-16
+    justify-end
+    items-center
+}
+
+.section-social-responsibility .social-responsibility-title {
+    @apply
+    text-5xl
+    relative
+    text-white
+    after:block
+    font-semibold
+    after:border-b
+    after:absolute
+    after:w-full
+    after:top-[50%]
+    after:right-[105%]
+    after:content-['']
+    after:border-white
+}
+
+.section-social-responsibility .social-responsibility-text {
+    @apply
+    pt-12
+    pb-24
+    pl-64
+    text-2xl
+    text-white
+}
+
+.section-social-responsibility .social-responsibility-text p::first-letter {
+    @apply
+    ml-16
+}
+
+.section-social-responsibility .social-responsibility-text p + p {
+    @apply
+    mt-8
+}
+
+.section-social-responsibility .social-responsibility-bottom-line {
+    @apply
+    block
+    w-3/6
+    right-0
+    absolute
+    border-t
+    border-white
+}
+
+.page-logistics .section-contact {
+    @apply
+    py-24
+    bg-[#5d2166]
+}
+
+.section-contact {
+}
+
+.section-contact .contact-form {
+    @apply
+    flex
+    flex-col
+    gap-9
+}
+
+.section-contact .contact-form .contact-form-title {
+    @apply
+    text-6xl
+    text-white
+    text-shadow
+    font-semibold
+    whitespace-nowrap
+}
+
+.section-contact .contact-form .contact-form-wrap {
+    @apply
+    grid
+    gap-8
+    grid-cols-[1fr_1fr_240px]
+}
+
+.section-contact .contact-form .contact-form-line {
+    @apply
+    flex
+    gap-4
+    flex-col
+}
+
+.section-contact .contact-form .contact-form-line + .contact-form-line {
+    @apply
+    mt-14
+}
+
+
+.section-contact .contact-form .contact-form-label {
+    @apply
+    text-2xl
+    text-white
+    font-semibold
+    text-shadow-sm
+}
+
+.section-contact .contact-form .contact-form-input {
+    @apply
+    py-5
+    px-9
+    bg-white
+    shadow-2xl
+    rounded-3xl
+}
+
+.section-contact .contact-form .contact-form-submit {
+    @apply
+    mt-[3rem]
+}
+
+.section-contact .contact-form .contact-form-submit button {
+    @apply
+    flex
+    w-full
+    h-full
+    bg-white
+    rounded-3xl
+    text-[9rem]
+    items-center
+    text-[#5d2166]
+    justify-center
+}
+
+.section-contact .contact-form .contact-form-submit i {
+    @apply
+    font-bold
+}
+
+.slider-mini {
+    @apply
+    z-10
+    relative
+}
+
+.slider-mini .slider-mini-controls {
+}
+
+.slider-mini .slider-mini-controls .slider-mini-control {
+    @apply
+    z-0
+    flex
+    w-24
+    h-full
+    absolute
+    items-center
+    text-[10rem]
+    cursor-pointer
+    overflow-hidden
+    text-black/[.8]
+    h-[calc(100%-6.5rem)]
+}
+
+.slider-mini .slider-mini-controls .slider-mini-control i {
+    @apply
+    -ml-8
+}
+
+.slider-mini .slider-mini-controls .slider-mini-prev {
+    @apply
+    left-0
+}
+
+.slider-mini .slider-mini-controls .slider-mini-next {
+    @apply
+    right-0
+}
+
+.slider-mini .slider-mini-layout {
+    @apply
+    flex
+    -z-10
+    w-full
+    gap-48
+    absolute
+    h-[calc(100%-6.5rem)]
+}
+
+.slider-mini .slider-mini-layout .slider-mini-layout-left {
+    @apply
+    bg-white
+    min-w-[30rem]
+    flex-shrink-0
+    rounded-tr-5xl
+    rounded-br-5xl
+    shadow-slider-mini
+}
+
+.slider-mini .slider-mini-layout .slider-mini-layout-right {
+    @apply
+    bg-white
+    flex-grow
+    flex-shrink-0
+    min-w-[20rem]
+    rounded-tl-5xl
+    rounded-bl-5xl
+    shadow-slider-mini
+}
+
+.slider-mini .slider-mini-slides {
+    @apply
+    py-8
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item {
+    @apply
+    hidden
+    mr-[6rem]
+    ml-[21rem]
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-image {
+    @apply
+    flex
+    bg-white
+    h-[24rem]
+    w-[30rem]
+    rounded-4xl
+    items-center
+    border-[1rem]
+    flex-shrink-0
+    justify-center
+    border-[#b31110]
+    shadow-slider-mini
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-text {
+    @apply
+    p-8
+    grid
+    gap-16
+    w-full
+    text-center
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-title {
+    @apply
+    text-5xl
+    font-bold
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-subtitle {
+    @apply
+    w-full
+    text-2xl
+    overflow-hidden
+    whitespace-nowrap
+    overflow-ellipsis
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-action {
+    @apply
+    flex
+    justify-center
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item-action a {
+    @apply
+    py-8
+    px-24
+    text-4xl
+    text-white
+    rounded-full
+    bg-[#b31110]
+    font-semibold
+    shadow-button
+    min-w-[25rem]
+}
+
+.slider-mini .slider-mini-slides .slider-mini-slides-item.active {
+    @apply
+    flex
+}
+
+.slider-mini .slider-mini-dots {
+    @apply
+    flex
+    gap-4
+    pt-12
+    pb-8
+    items-center
+    justify-center
+}
+
+.slider-mini .slider-mini-dots-item {
+    @apply
+    w-6
+    h-6
+    rounded-full
+    bg-white/[.75]
+    cursor-pointer
+}
+
+.slider-mini .slider-mini-dots-item.active {
+    @apply
+    bg-white
+}
