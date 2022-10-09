@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use App\Mail\ContactMessageMail;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
@@ -35,9 +36,12 @@ Route::post('/iletisim', function (Request $request) {
         toast('Mesajınız başarıyla gönderildi!', 'success');
 
         return redirect()->route('index');
-    } catch (Exception) {
+    } catch (Exception $e) {
+        Log::error('Mail gönderilemedi!', ['details' => $e->getMessage()]);
+
         toast('Bir hata oluştu lütfen daha sonra tekrar deneyiniz.', 'error');
-        return redirect()->back();
+
+        return redirect()->back()->withInput();
     }
 })->name('contact-post');
 
