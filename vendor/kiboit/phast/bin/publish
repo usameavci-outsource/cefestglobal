@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+git describe --tags --exact-match HEAD
+
+git push git@github.com:kiboit/phast master --tags

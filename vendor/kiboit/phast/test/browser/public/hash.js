@@ -1,0 +1,1 @@
+../../../src/Filters/HTML/PhastScriptsCompiler/hash.js

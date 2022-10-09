@@ -1934,6 +1934,58 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "kiboit/phast",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kiboit/phast.git",
+                "reference": "e509e805888aba5d185fba6c74fc578ae8609fe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kiboit/phast/zipball/e509e805888aba5d185fba6c74fc578ae8609fe6",
+                "reference": "e509e805888aba5d185fba6c74fc578ae8609fe6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "facebook/webdriver": "^1.5",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "kiboit/jsmin-php": "dev-master",
+                "nikic/php-parser": "^4.13",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "nikic/php-parser": "Needed for compilation"
+            },
+            "time": "2022-04-03T13:08:37+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Kibo\\Phast\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "description": "A toolbox for optimizing web page performance",
+            "support": {
+                "issues": "https://github.com/kiboit/phast/issues",
+                "source": "https://github.com/kiboit/phast/tree/1.104"
+            },
+            "install-path": "../kiboit/phast"
+        },
+        {
             "name": "laravel/breeze",
             "version": "v1.14.0",
             "version_normalized": "1.14.0.0",

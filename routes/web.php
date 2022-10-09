@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Kibo\Phast\PhastServices;
 use App\Mail\ContactMessageMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('phast.php', fn() => PhastServices::serve())->name('phast');
 
 Route::view('/', 'pages.index')->name('index');
 Route::view('/cefest-bilisim', 'pages.technology')->name('technology');

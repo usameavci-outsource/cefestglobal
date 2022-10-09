@@ -10,6 +10,7 @@
         "3x1io/filament-commands": "^1.1",
         "filament/filament": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
+        "kiboit/phast": "dev-master",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
