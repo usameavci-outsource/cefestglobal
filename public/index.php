@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use Kibo\Phast\PhastDocumentFilters;
 use Illuminate\Contracts\Http\Kernel;
 
 define('LARAVEL_START', microtime(true));
@@ -47,15 +46,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-/** @var \App\Http\Kernel $kernel */
 $kernel = $app->make(Kernel::class);
 
 $response = $kernel->handle(
     $request = Request::capture()
-);
-
-$output = PhastDocumentFilters::apply($response->getContent(), []);
-
-$response->setContent($output)->send();
+)->send();
 
 $kernel->terminate($request, $response);

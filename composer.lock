@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c5ebaba3223cb477dede73855274e20",
+    "content-hash": "cfae4f0491d183da42ba2b693944e610",
     "packages": [
         {
             "name": "3x1io/filament-browser",
@@ -1598,55 +1598,6 @@
                 }
             ],
             "time": "2022-08-28T14:45:39+00:00"
-        },
-        {
-            "name": "kiboit/phast",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kiboit/phast.git",
-                "reference": "e509e805888aba5d185fba6c74fc578ae8609fe6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kiboit/phast/zipball/e509e805888aba5d185fba6c74fc578ae8609fe6",
-                "reference": "e509e805888aba5d185fba6c74fc578ae8609fe6",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "ext-dom": "*",
-                "facebook/webdriver": "^1.5",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "kiboit/jsmin-php": "dev-master",
-                "nikic/php-parser": "^4.13",
-                "phpunit/phpunit": "^9.5"
-            },
-            "suggest": {
-                "nikic/php-parser": "Needed for compilation"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Kibo\\Phast\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "AGPL-3.0-or-later"
-            ],
-            "description": "A toolbox for optimizing web page performance",
-            "support": {
-                "issues": "https://github.com/kiboit/phast/issues",
-                "source": "https://github.com/kiboit/phast/tree/1.104"
-            },
-            "time": "2022-04-03T13:08:37+00:00"
         },
         {
             "name": "laravel/framework",
@@ -9316,9 +9267,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "kiboit/phast": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

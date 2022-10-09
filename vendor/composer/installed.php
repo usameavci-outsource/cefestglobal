@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '55e5b832a5d5a71edb665b6d0ed6cdc8e86203d1',
+        'reference' => '0c224030b07cef71cd5c95dffcafb55dffe73a23',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -457,17 +457,6 @@
                 0 => 'v9.33.0',
             ),
         ),
-        'kiboit/phast' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'e509e805888aba5d185fba6c74fc578ae8609fe6',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../kiboit/phast',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'dev_requirement' => false,
-        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -495,7 +484,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '55e5b832a5d5a71edb665b6d0ed6cdc8e86203d1',
+            'reference' => '0c224030b07cef71cd5c95dffcafb55dffe73a23',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
