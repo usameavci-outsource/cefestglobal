@@ -1,0 +1,68 @@
+.contact-form {
+    @apply
+    flex
+    gap-8
+    flex-col
+}
+
+.contact-form .contact-form-title {
+    @apply
+    text-6xl
+    font-semibold
+    whitespace-nowrap
+}
+
+.contact-form .contact-form-wrap {
+    @apply
+    w-full
+}
+
+.contact-form .contact-form-line {
+    @apply
+    flex
+    gap-4
+    flex-col
+}
+
+.contact-form .contact-form-line + .contact-form-line {
+    @apply
+    mt-4
+}
+
+
+.contact-form .contact-form-label {
+    @apply
+    text-xl
+    font-semibold
+}
+
+.contact-form .contact-form-input {
+    @apply
+    py-3
+    px-5
+    bg-white
+    shadow-lg
+    rounded-xl
+}
+
+.contact-form .contact-form-submit {
+    @apply
+    flex
+    items-center
+    justify-end
+}
+
+.contact-form .contact-form-submit button {
+    @apply
+    py-4
+    px-8
+    text-2xl
+    bg-black
+    text-white
+    rounded-3xl
+}
+
+.contact-form .contact-form-submit i {
+    @apply
+    font-bold
+}

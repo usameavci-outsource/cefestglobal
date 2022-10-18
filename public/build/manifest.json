@@ -11,6 +11,10 @@
     "file": "assets/technology-bg.64396a88.jpg",
     "src": "public/assets/images/technology-bg.jpg"
   },
+  "public/assets/images/textile-bg.jpg": {
+    "file": "assets/textile-bg.8f15f72a.jpg",
+    "src": "public/assets/images/textile-bg.jpg"
+  },
   "public/assets/images/mission-vision-bg.png": {
     "file": "assets/mission-vision-bg.fef796ad.png",
     "src": "public/assets/images/mission-vision-bg.png"
@@ -20,7 +24,7 @@
     "src": "public/assets/images/logistics-bg.jpg"
   },
   "resources/js/app.js": {
-    "file": "assets/app.40589ff6.js",
+    "file": "assets/app.c4e82762.js",
     "src": "resources/js/app.js",
     "isEntry": true
   },
@@ -30,28 +34,33 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app.361b1232.css",
+    "file": "assets/app.8015f5eb.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/pages/contact.css": {
-    "file": "assets/contact.65d9364e.css",
+    "file": "assets/contact.85a5f6ff.css",
     "src": "resources/css/pages/contact.css",
     "isEntry": true
   },
+  "resources/css/pages/textile.css": {
+    "file": "assets/textile.84a60e7c.css",
+    "src": "resources/css/pages/textile.css",
+    "isEntry": true
+  },
+  "resources/css/pages/technology.css": {
+    "file": "assets/technology.cd4d487c.css",
+    "src": "resources/css/pages/technology.css",
+    "isEntry": true
+  },
   "resources/css/pages/index.css": {
-    "file": "assets/index.1f81c6bb.css",
+    "file": "assets/index.449b3ec5.css",
     "src": "resources/css/pages/index.css",
     "isEntry": true
   },
   "resources/css/pages/logistics.css": {
-    "file": "assets/logistics.05383e9d.css",
+    "file": "assets/logistics.f551f266.css",
     "src": "resources/css/pages/logistics.css",
-    "isEntry": true
-  },
-  "resources/css/pages/technology.css": {
-    "file": "assets/technology.cbeb9aad.css",
-    "src": "resources/css/pages/technology.css",
     "isEntry": true
   }
 }

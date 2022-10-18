@@ -8,33 +8,44 @@
     <main class="page page-contact">
         <div class="section section-contact">
             <div class="page-container">
-                <form class="contact-form" action="{{ route('contact-post') }}" method="post">
-                    @csrf
+                <div class="text-6xl mb-12 font-bold">{{ 'Bize Ulaşın,' }}</div>
 
-                    <div class="contact-form-title">{{ 'Bize Ulaşın,' }}</div>
-                    <div class="contact-form-wrap">
-                        <div class="contact-form-line">
-                            <label class="contact-form-label" for="fullname">{{ 'Adınız Soyadınız:' }}</label>
-                            <input value="{{ old('fullname') }}" class="contact-form-input" type="text" id="fullname"
-                                   name="fullname" required>
-                        </div>
-                        <div class="contact-form-line">
-                            <label class="contact-form-label" for="email">{{ 'Mail Adresiniz:' }}</label>
-                            <input value="{{ old('email') }}" class="contact-form-input" type="email" id="email"
-                                   name="email" required>
-                        </div>
-                        <div class="contact-form-line">
-                            <label class="contact-form-label" for="message">{{ 'Mesajınız:' }}</label>
-                            <textarea class="contact-form-input" id="message" name="message" rows="8"
-                                      required>{{ old('message') }}</textarea>
-                        </div>
+                <div class="grid grid-cols-4 gap-32">
+                    <div class="col-span-2">
+                        <h4 class="text-2xl font-semibold mb-12">
+                            {{ 'Cefest Lojistik Bilişim Danışmanlık Ve Ticaret Limited Şirketi' }}
+                        </h4>
+                        <address>
+                            <p class="mb-4">
+                                <b class="block">Adres</b>
+                                <span>Mecidiyeköy Mahallesi, Mecidiyekuyu Sokak, No: 38 Daire:2</span>
+                                <span>Şişli / İstanbul</span>
+                            </p>
+                            <p class="mb-4">
+                                <b class="block">VD/VN</b>
+                                <span>Zincirlikuyu Vergi Dairesi</span>
+                                <span>2040637580</span>
+                            </p>
+                            <p class="mb-4">
+                                <b class="block">Telefon</b>
+                                <a href="tel:+908508026204">+90 (850) 802 6204</a>
+                            </p>
+                        </address>
                     </div>
-                    <div class="contact-form-submit">
-                        <button type="submit">
-                            {{ 'Mesaj Gönder' }} <i class="lni lni-arrow-right-circle"></i>
-                        </button>
+                    <div class="col-span-2">
+                        <form class="contact-form" action="{{ route('contact-post') }}" method="post">
+                            @csrf
+
+                            @include('components.contact-form-fields')
+
+                            <div class="contact-form-submit">
+                                <button type="submit">
+                                    {{ 'Mesaj Gönder' }} <i class="lni lni-arrow-right-circle"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>

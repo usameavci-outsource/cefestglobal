@@ -12,8 +12,7 @@
             </a>
             <nav class="header-nav">
                 <a href="{{ route('index') }}">Anasayfa</a>
-                <a href="{{ route('contact') }}">Teklif Al</a>
-                <a href="{{ route('services') }}">Hizmetlerimiz</a>
+                <a href="{{ route('contact') }}" class="get-offer-trigger">Teklif Al</a>
                 <a href="{{ route('contact') }}">İletişim</a>
             </nav>
         </div>

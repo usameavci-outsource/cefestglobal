@@ -1,0 +1,23 @@
+.get-offer-modal .tingle-modal-box {
+    @apply
+    w-2/6
+}
+
+.get-offer-modal .tingle-modal-box__footer {
+    @apply
+    flex
+    justify-between
+    after:hidden
+}
+
+.get-offer-modal .tingle-btn--black {
+    @apply
+    rounded
+    bg-black
+    text-white
+}
+
+.get-offer-modal .tingle-btn--black[disabled] {
+    @apply
+    bg-black/[0.5]
+}

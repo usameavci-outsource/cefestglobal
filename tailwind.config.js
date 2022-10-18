@@ -6,6 +6,7 @@ module.exports = {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './resources/js/**/*.js',
     ],
 
     theme: {
@@ -19,6 +20,7 @@ module.exports = {
                 '6xl': '4rem',
             },
             backgroundImage: {
+                'textile': "url('../../../public/assets/images/textile-bg.jpg')",
                 'technology': "url('../../../public/assets/images/technology-bg.jpg')",
                 'logistics': "url('../../../public/assets/images/logistics-bg.jpg')",
                 'section-services': "url('../../../public/assets/images/section-services-bg.jpg')",

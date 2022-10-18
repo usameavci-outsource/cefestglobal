@@ -11,6 +11,7 @@ export default defineConfig({
                 'resources/css/pages/index.css',
                 'resources/css/pages/logistics.css',
                 'resources/css/pages/technology.css',
+                'resources/css/pages/textile.css',
                 'resources/js/app.js',
             ],
             refresh: true,
