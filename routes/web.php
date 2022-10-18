@@ -55,7 +55,7 @@ Route::post('/iletisim', function (Request $request) {
 
         toast($message, 'success');
 
-        return redirect()->back();
+        return redirect()->route('contact');
     } catch (Exception $e) {
         Log::error('Mail gönderilemedi!', ['details' => $e->getMessage()]);
 
@@ -67,7 +67,7 @@ Route::post('/iletisim', function (Request $request) {
 
         toast($message, 'error');
 
-        return redirect()->back()->withInput();
+        return redirect()->route('contact')->withInput();
     }
 })->name('contact-post');
 
