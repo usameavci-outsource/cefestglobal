@@ -130,6 +130,7 @@ const initGetOffer = () => {
                     icon: 'error',
                 });
             } finally {
+                elmSubmit.disabled = false;
                 elmLoading.classList.add('hidden');
             }
         });
