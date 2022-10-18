@@ -80,7 +80,6 @@
 
 .header-search {
     @apply
-    flex
     gap-3
     w-full
     max-w-xs

@@ -19,10 +19,11 @@
     </div>
     <div class="header-right">
         <div class="header-search">
-            <input type="text" placeholder="Ara.." class="header-search-input"/>
-            <button class="header-search-submit">
-                <i class="lni lni-search-alt"></i>
-            </button>
+            {{--            <input type="text" placeholder="Ara.." class="header-search-input"/>--}}
+            <div class="gcse-search"></div>
+            {{--            <button class="header-search-submit">--}}
+            {{--                <i class="lni lni-search-alt"></i>--}}
+            {{--            </button>--}}
         </div>
     </div>
 </header>
