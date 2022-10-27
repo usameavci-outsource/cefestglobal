@@ -1,7 +1,6 @@
 .header {
     @apply
     flex
-    gap-6
     flex-nowrap
 }
 
