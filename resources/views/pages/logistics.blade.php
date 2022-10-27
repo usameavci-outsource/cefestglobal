@@ -291,9 +291,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-image">
-                    <img src="{{ asset('assets/images/slider/truck.png') }}" alt="">
-                </div>
+                {{--                <div class="slider-image">--}}
+                {{--                    <img src="{{ asset('assets/images/slider/truck.png') }}" alt="">--}}
+                {{--                </div>--}}
             </div>
 
             {{--            <div class="offer-button-wrapper">--}}

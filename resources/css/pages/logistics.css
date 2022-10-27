@@ -75,6 +75,7 @@
 .page-logistics .section-intro-video {
     @apply
     flex
+    mt-12
     items-center
     bg-[#e5df67]
     min-h-[50rem]
@@ -372,6 +373,7 @@
 
 .section-social-responsibility .social-responsibility-title {
     @apply
+    mr-40
     text-5xl
     relative
     text-white
@@ -390,7 +392,7 @@
     @apply
     pt-12
     pb-24
-    pl-52
+    pl-72
     ml-72
     text-xl
     text-white
