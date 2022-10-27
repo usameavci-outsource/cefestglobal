@@ -63,6 +63,7 @@
     bg-white
     shadow-md
     rounded-4xl
+    cursor-pointer
 }
 
 .features .features-item img {
@@ -82,10 +83,10 @@
 
 .page-logistics .section-transportation {
     @apply
-    pt-80
-    pb-[32rem]
+    pt-48
+    pb-56
     bg-no-repeat
-    bg-[length:75%]
+    bg-[length:55%]
     bg-section-transportation
     bg-section-transportation-size
 }
@@ -102,8 +103,8 @@
 
 .section-transportation .content-title::before {
     top: 60%;
-    right: 99%;
-    width: 100%;
+    right: 95%;
+    width: 15%;
     content: '';
     display: block;
     position: absolute;
@@ -159,7 +160,7 @@
 .page-logistics .section-collage {
     @apply
     -mt-56
-    pb-56
+    pb-36
 }
 
 .page-logistics .section-collage img {
@@ -181,12 +182,12 @@
 
 .section-services .content-title {
     @apply
-    text-9xl
+    text-7xl
     relative
     after:block
     after:border-b
     after:absolute
-    after:w-full
+    after:w-[90%]
     after:top-[50%]
     after:right-[110%]
     after:content-['']
@@ -251,9 +252,7 @@
 
 .section-services .slider .slider-content .slider-content-list .slider-content-item {
     @apply
-    pl-20
-    pr-4
-    py-4
+    pl-8
     flex
     gap-8
     text-white
@@ -270,7 +269,7 @@
 
 .section-services .slider .slider-content .slider-content-list .slider-content-title {
     @apply
-    text-5xl
+    text-3xl
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-text {
@@ -284,16 +283,22 @@
 }
 
 .section-services .slider .slider-image img {
+    @apply
+    h-full
+    object-cover
+    rounded-tl-6xl
+    rounded-bl-6xl
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-item.active {
     @apply
     z-10
-    pr-12
-    py-12
+    pl-12
+    pr-4
+    py-4
     relative
     text-black
-    mr-[-32rem]
+    -mr-60
     border-white
     bg-[#e5df68]
     rounded-tr-6xl
@@ -350,6 +355,7 @@
     pt-32
     mb-32
     relative
+    rounded-2xl
     bg-[#b31110]
     bg-no-repeat
     bg-[length:40rem]
@@ -384,8 +390,9 @@
     @apply
     pt-12
     pb-24
-    pl-64
-    text-2xl
+    pl-52
+    ml-72
+    text-xl
     text-white
 }
 

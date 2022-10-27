@@ -11,21 +11,28 @@
 .footer .footer-services {
     @apply
     grid
-    gap-4
-    grid-cols-3
+    gap-2
+    grid-flow-col
 }
 
-.footer .footer-services-item + .footer-services-item {
+.footer .footer-services .footer-services-separator {
     @apply
-    border-l
-    border-gray-700
-    flex
-    justify-center
+    hidden
+    md:block
+    w-[1px]
+    bg-gray-700
+    h-full
 }
 
-.footer .footer-services-item img {
+.footer .footer-services .footer-services-item {
     @apply
-    h-12
+    text-center
+}
+
+.footer .footer-services .footer-services-item img {
+    @apply
+    h-10
+    inline
 }
 
 .footer-contact {

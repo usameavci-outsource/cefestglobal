@@ -14,28 +14,28 @@
                 <div class="section-features-inner">
                     <div class="page-container">
                         <div class="features">
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-1">
                                 <img src="{{ asset('assets/icons/truck-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-2">
                                 <img src="{{ asset('assets/icons/ship-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-3">
                                 <img src="{{ asset('assets/icons/box-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-4">
                                 <img src="{{ asset('assets/icons/train-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-5">
                                 <img src="{{ asset('assets/icons/home-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-6">
                                 <img src="{{ asset('assets/icons/cargo-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-7">
                                 <img src="{{ asset('assets/icons/transfer-logo.svg') }}" alt="">
                             </div>
-                            <div class="features-item">
+                            <div class="features-item" data-target="#service-slider-8">
                                 <img src="{{ asset('assets/icons/truck-logo2.svg') }}" alt="">
                             </div>
                         </div>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="section section-intro-video">
-            <a href="https://www.youtube.com/watch?v=5rg7vgniCZc" class="glightbox">
+            <a href="{{ asset('assets/intro-video.mp4') }}" class="glightbox">
                 <img class="intro-video-play-button" src="{{ asset('assets/icons/play-button.png') }}" alt="play">
             </a>
         </div>
@@ -84,7 +84,7 @@
             <div class="slider">
                 <div class="slider-content">
                     <div class="slider-content-list">
-                        <div class="slider-content-item active">
+                        <div id="service-slider-1" class="slider-content-item active">
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Karayolu Taşımacılığı' }}</div>
                                 <div class="slider-content-text">
@@ -111,7 +111,7 @@
                                      src="{{ asset('assets/icons/truck-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-2" class="slider-content-item">
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Denizyolu Taşımacılığı' }}</div>
                                 <div class="slider-content-text">
@@ -138,7 +138,7 @@
                                      src="{{ asset('assets/icons/ship-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-3" class="slider-content-item">
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Havayolu Taşımacılığı' }}</div>
                                 <div class="slider-content-text">
@@ -165,7 +165,7 @@
                                      src="{{ asset('assets/icons/box-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-4" class="slider-content-item">
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Demiryolu Taşımacılığı' }}</div>
                                 <div class="slider-content-text">
@@ -190,28 +190,7 @@
                                      src="{{ asset('assets/icons/train-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
-                            <div class="slider-content-wrap">
-                                <div class="slider-content-title">{{ 'Dökme Yük ve Genel Kargo Taşımacılığı' }}</div>
-                                <div class="slider-content-text">
-                                    <div class="flex">
-                                        <div class="text-base pr-8 flex-1">{{ 'Modern ve uygun ekipmanlar ile 70.000 DWT\'luk
-                                        dökme yük gemilerine kadar hizmet verilmektedir. Limanda gübre, mısır, buğday, kepek,
-                                        soya fasulyesi vb. tahıl ürünleri olan dökme yükler ile boru, rulo saç, demir, paletli,
-                                        big bag\'li, sling bag\'li vb. genel yükler elleçlenmektedir.' }}</div>
-                                        <div class="text-base pr-8 flex-1"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="slider-content-image">
-                                <img class="slider-content-image-default"
-                                     src="{{ asset('assets/icons/home-logo.svg') }}" alt="">
-                                <img class="slider-content-image-active"
-                                     src="{{ asset('assets/icons/home-logo-black.svg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-5" class="slider-content-item">
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Depolama Hizmet Çözüm Ortaklığı' }}</div>
                                 <div class="slider-content-text">
@@ -242,10 +221,21 @@
                                      src="{{ asset('assets/icons/home-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-6" class="slider-content-item">
                             <div class="slider-content-wrap">
-                                <div class="slider-content-title">Parsiyel Eşya Taşımacılığı</div>
-                                <div class="slider-content-text"></div>
+                                <div class="slider-content-title">{{ 'Parsiyel Eşya Taşımacılığı' }}</div>
+                                <div class="slider-content-text">
+                                    <div class="flex">
+                                        <div class="text-base border-l border-black pl-8 flex-1">
+                                            <ul class="list-disc list-inside">
+                                                <li>{{ 'Parsiyel eşya taşıma genel olarak denizyolu ile ithalat ve ihracatta uygulanan özel bir dağıtım sistemidir.' }}</li>
+                                                <li>{{ 'Parsiyel eşya taşımacılığı sistemimizde, müşterilerimizin memnuniyetini sağlamak adına hıza ve maliyet avantajına önem veriyoruz' }}</li>
+                                                <li>{{ 'Parsiyel lojistik hizmetimizi sunmak üzere her geçen gün geliştirdiğimiz hizmet ağımızda başta İstanbul olmak üzere İzmit, Gemlik, İzmir, Mersin, Antalya ve İskenderun Limanlarından ithalat ve ihracat parsiyel servislerimiz bulunmaktadır.' }}</li>
+                                                <li>{{ 'Bir çok alanda ve serviste parsiyel taşımacılığı gerçekleştirmekteyiz.' }}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div
                                 class="slider-content-image">
@@ -255,10 +245,20 @@
                                      src="{{ asset('assets/icons/cargo-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-7" class="slider-content-item">
                             <div class="slider-content-wrap">
-                                <div class="slider-content-title">Multimodal Taşımacılık</div>
-                                <div class="slider-content-text"></div>
+                                <div class="slider-content-title">{{ 'Multimodal Taşımacılık' }}</div>
+                                <div class="slider-content-text">
+                                    <div class="flex">
+                                        <div class="text-base pr-8 flex-1">
+                                            <ul class="list-disc list-inside">
+                                                <li>{{ 'En az iki adet lojistik servisin kullanıldığı; sözleşmenin ve evrağın tek sorumlu tarafından ulaştırıldığı taşımacılık işlemine “multimodal taşımacılık” denir. Ulaşım için tek bir sözleşme imzalanır ve buna bağlı kalınarak işlem tamamlanır.' }}</li>
+                                                <li>{{ 'Güzergah boyunca farklı rotalardan geçen kargo, rotasını değiştirmeden konteynerlar arası aktarılır. Multimodal taşımacılık genellikle dökme yük taşırken kullanılır. Entegre bir sistem olan multimodal taşımacılıkta yükler, taşındıkları ekipmandan bir diğerine aktarılır. Yüklerin çıkış yaptığı noktadan vardığı noktaya kadar olan tüm yollar için sözleşme tektir.' }}</li>
+                                                <li>{{ 'Multimodal taşımacılıkta tüm taşıma yolları kullanılabilir. Yüklerin güvenle taşınması için hangi yolların tercih edilmesi gerektiğine karar verilir ve planlama bu doğrultuda gerçekleştirilir. Örneğin; bir yük karayolu ile başladığı yolculuğuna konteyner değişikliği yaparak havayolu ile devam edebilir.' }}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div
                                 class="slider-content-image">
@@ -268,10 +268,18 @@
                                      src="{{ asset('assets/icons/transfer-logo-black.svg') }}" alt="">
                             </div>
                         </div>
-                        <div class="slider-content-item">
+                        <div id="service-slider-8" class="slider-content-item">
                             <div class="slider-content-wrap">
-                                <div class="slider-content-title">Dökme Yük ve Genel Kargo Taşımacılığı</div>
-                                <div class="slider-content-text"></div>
+                                <div class="slider-content-title">{{ 'Dökme Yük ve Genel Kargo Taşımacılığı' }}</div>
+                                <div class="slider-content-text">
+                                    <div class="flex">
+                                        <div class="text-base pr-8 flex-1">{{ 'Modern ve uygun ekipmanlar ile 70.000 DWT\'luk
+                                        dökme yük gemilerine kadar hizmet verilmektedir. Limanda gübre, mısır, buğday, kepek,
+                                        soya fasulyesi vb. tahıl ürünleri olan dökme yükler ile boru, rulo saç, demir, paletli,
+                                        big bag\'li, sling bag\'li vb. genel yükler elleçlenmektedir.' }}</div>
+                                        <div class="text-base pr-8 flex-1"></div>
+                                    </div>
+                                </div>
                             </div>
                             <div
                                 class="slider-content-image">
@@ -306,13 +314,11 @@
                 </div>
 
                 <div class="social-responsibility-text">
-                    <p>{{ 'CeFest Global kurulduğu andan itibaren tüm Türkiye ve dünyanın diğer ülkelerinde yardıma ihtiyaç
-                     duyan insan ve dünyamızı paylaştığımız diğer canlılara destek oluyoruz. Çözüm ortaklığı ve danışmanlık
-                     yaptığımız tüm iş ortaklarımız adına dernek ve vakıflara bağışta bulunarak, yaşamakta olduğumuz dünyayı
-                     daha güzel bir yer haline getirmeyi istiyoruz.' }}</p>
-                    <p>{{ 'Siz de bizimle aynı ﬁkirdeyseniz çalışmaya başladığımız andan itibaren, yükünüz size ya da alıcıya
-                     ulaştıktan sonra,seçeceğiniz kurumlara şeffaf bir şekilde hem sizin adınıza hem de aynı oranda Cefest Global
-                     olarak bağışlarımızı yapıyoruz.' }}</p>
+                    <p>{{ 'CeFest Global kurulduğu andan itibaren tüm Türkiye ve dünyanın diğer ülkelerinde
+                        yardıma ihtiyaç duyan insan ve dünyamızı paylaştığımız diğer canlılara destek oluyoruz.
+                        Çözüm ortaklığı ve danışmanlık yaptığımız tüm iş ortaklarımız adına dernek ve vakıflara
+                        bağışta bulunarak, yaşamakta olduğumuz dünyayı daha güzel bir yer haline getirmeyi
+                        istiyoruz.' }}</p>
                 </div>
 
                 <div class="social-responsibility-bottom-line"></div>

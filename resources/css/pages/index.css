@@ -33,12 +33,13 @@
 .page-index .services {
     @apply
     flex
-    py-12
+    py-8
+    mx-12
     bg-white
     flex-wrap
     items-center
     justify-center
-    rounded-[80px]
+    rounded-5xl
     shadow-section-services
 }
 
@@ -71,11 +72,11 @@
 
 .page-index .section-mission-vision {
     @apply
-    pt-64
+    pt-32
     pb-32
     bg-no-repeat
-    bg-[length:75%]
-    bg-[position:center_-3rem]
+    bg-[length:50%]
+    bg-[position:center_0rem]
     bg-section-mission-vision
 }
 
@@ -83,17 +84,16 @@
     @apply
     grid
     py-12
-    -mx-28
-    gap-40
+    gap-24
     grid-cols-2
 }
 
 .page-index .mission-vision-inner .box {
     @apply
     flex
-    gap-8
+    gap-4
     px-8
-    py-10
+    py-6
     flex-col
     bg-white
     items-center
@@ -103,14 +103,14 @@
 
 .page-index .mission-vision-inner .box .box-title {
     @apply
-    text-5xl
+    text-3xl
     text-black
-    text-shadow-sm
+    text-shadow-xs
 }
 
 .page-index .mission-vision-inner .box .box-content {
     @apply
-    text-xl
+    text-justify
 }
 
 

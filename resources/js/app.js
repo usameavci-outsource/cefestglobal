@@ -42,6 +42,18 @@ const initLightBox = () => {
     });
 };
 
+const setSliderActive = (target) => {
+    const elm = document.querySelector('.slider');
+    if (!elm) return;
+
+    const container = elm.querySelector('.slider-content-list');
+    if (!container) return;
+
+    Array.from(container.children).forEach((item) => item.classList.remove('active'));
+
+    target.classList.add('active');
+};
+
 const initSlider = () => {
     const elm = document.querySelector('.slider');
     if (!elm) return;
@@ -49,11 +61,11 @@ const initSlider = () => {
     const container = elm.querySelector('.slider-content-list');
     if (!container) return;
 
-    Array.from(container.children).forEach((target) => target.addEventListener('click', () => {
-        Array.from(container.children).forEach((item) => item.classList.remove('active'));
-
-        target.classList.add('active');
-    }));
+    Array.from(container.children).forEach((target) =>
+        target.addEventListener('click', () =>
+            setSliderActive(target)
+        )
+    );
 };
 
 const initGetOffer = () => {
@@ -144,6 +156,23 @@ const initGetOffer = () => {
 
 };
 
+const initLogisticServicesScroll = () => {
+    const elmItems = Array.from(document.querySelectorAll('.features .features-item'));
+    if (!elmItems.length) return;
+
+    elmItems.forEach((elmItem) => {
+        elmItem.addEventListener('click', () => {
+            const elmTarget = document.querySelector(elmItem.dataset.target);
+            if (!elmTarget) return;
+
+            setSliderActive(elmTarget);
+
+            elmTarget.scrollIntoView({behavior: 'smooth'});
+        });
+    });
+};
+
 initSlider();
 initLightBox();
 initGetOffer();
+initLogisticServicesScroll();

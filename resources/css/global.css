@@ -7,25 +7,29 @@
 
 @layer base {
     .shadow-header {
-        box-shadow: 0 6px 12px rgb(0 0 0 / 28%);
+        box-shadow: 0 3px 9px rgb(0 0 0 / 20%);
     }
 }
 
 @layer utilities {
+    .text-shadow-xs {
+        text-shadow: 0 1px 2px rgba(0 0 0 / 75%);
+    }
+
     .text-shadow-sm {
-        text-shadow: 1px 2px 3px black;
+        text-shadow: 1px 2px 3px rgba(0 0 0 / 75%);
     }
 
     .text-shadow {
-        text-shadow: 2px 2px 4px black;
+        text-shadow: 2px 2px 4px rgba(0 0 0 / 75%);
     }
 
     .text-shadow-md {
-        text-shadow: 4px 4px 8px black;
+        text-shadow: 4px 4px 8px rgba(0 0 0 / 75%);
     }
 
     .text-shadow-lg {
-        text-shadow: 15px 15px 30px black;
+        text-shadow: 15px 15px 30px rgba(0 0 0 / 75%);
     }
 
     .text-shadow-none {
@@ -33,18 +37,14 @@
     }
 }
 
-body {
-    @apply
-    min-w-[1920px]
-}
-
 .page {
     @apply
-    min-w-[1536px]
+    mx-auto
+    w-[1366px]
 }
 
 .page-container {
     @apply
     mx-auto
-    w-[1140px]
+    w-[1366px]
 }

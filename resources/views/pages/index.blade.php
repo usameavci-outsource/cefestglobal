@@ -84,7 +84,7 @@
                     <div class="scopes-item"><img src="{{ asset('assets/images/plane.png') }}" alt=""></div>
                     <div class="scopes-item"><img src="{{ asset('assets/images/circuit-board.png') }}" alt=""></div>
                     <div class="scopes-item"><img src="{{ asset('assets/images/ship.png') }}" alt=""></div>
-                    <div class="scopes-item"><img src="{{ asset('assets/images/coding.png') }}" alt=""></div>
+                    <div class="scopes-item"><img src="{{ asset('assets/images/textile.png') }}" alt=""></div>
                 </div>
             </div>
         </div>

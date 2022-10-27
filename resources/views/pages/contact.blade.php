@@ -8,7 +8,7 @@
     <main class="page page-contact">
         <div class="section section-contact">
             <div class="page-container">
-                <div class="text-6xl mb-12 font-bold">{{ 'Bize Ulaşın,' }}</div>
+                <div class="text-6xl mb-12 font-bold">{{ 'Bize Ulaşın' }}</div>
 
                 <div class="grid grid-cols-4 gap-32">
                     <div class="col-span-2">
@@ -18,13 +18,13 @@
                         <address>
                             <p class="mb-4">
                                 <b class="block">Adres</b>
-                                <span>Mecidiyeköy Mahallesi, Mecidiyekuyu Sokak, No: 38 Daire:2</span>
-                                <span>Şişli / İstanbul</span>
+                                <span class="block">Mecidiyeköy Mahallesi, Mecidiyekuyu Sokak, No: 38 Daire:2</span>
+                                <span class="block">Şişli / İstanbul</span>
                             </p>
                             <p class="mb-4">
-                                <b class="block">VD/VN</b>
-                                <span>Zincirlikuyu Vergi Dairesi</span>
-                                <span>2040637580</span>
+                                <b class="block">Vergi Dairesi / Vergi No</b>
+                                <span class="block">Zincirlikuyu Vergi Dairesi</span>
+                                <span class="block">2040637580</span>
                             </p>
                             <p class="mb-4">
                                 <b class="block">Telefon</b>

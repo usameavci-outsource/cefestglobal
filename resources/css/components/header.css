@@ -16,9 +16,7 @@
 }
 
 .header-left {
-    @apply
-    flex-shrink-0
-    w-[calc((100%-1140px)/2-1.5rem)];
+
 }
 
 .header-main {
@@ -26,14 +24,15 @@
     flex
     py-4
     px-24
-    w-full
+    w-[90%]
+    mx-auto
     h-full
-    bg-[#e7e7e7]
+    bg-[#efefef]
     items-center
     shadow-header
     justify-between
-    rounded-bl-[80px]
-    rounded-br-[80px]
+    rounded-bl-5xl
+    rounded-br-5xl
 }
 
 .header-logo {
@@ -74,8 +73,6 @@
     @apply
     flex
     items-center
-    flex-shrink-0
-    w-[calc((100%-1140px)/2-1.5rem)];
 }
 
 .header-search {
