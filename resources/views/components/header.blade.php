@@ -10,7 +10,12 @@
             <a class="header-logo" href="{{ route('index') }}">
                 <img src="{{ asset('assets/brand/cefest-global-logo.svg') }}" alt="{{ config('app.name') }}">
             </a>
-            <nav class="header-nav">
+            <div id="menu-toggle" class="space-y-2 sm:hidden">
+                <div class="w-8 h-0.5 bg-gray-600"></div>
+                <div class="w-8 h-0.5 bg-gray-600"></div>
+                <div class="w-8 h-0.5 bg-gray-600"></div>
+            </div>
+            <nav id="menu-nav" class="header-nav hidden sm:flex">
                 <a href="{{ route('index') }}">Anasayfa</a>
                 <a href="{{ route('contact') }}" class="get-offer-trigger">Teklif Al</a>
                 <a href="{{ route('contact') }}">İletişim</a>

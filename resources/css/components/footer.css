@@ -11,8 +11,9 @@
 .footer .footer-services {
     @apply
     grid
-    gap-2
-    grid-flow-col
+    gap-8
+    grid-flow-row
+    justify-center
 }
 
 .footer .footer-services .footer-services-separator {
@@ -39,12 +40,11 @@
     @apply
     flex
     py-4
-    gap-24
+    flex-col
     items-center
     justify-center
     bg-[#e5e5e5]
 }
-
 
 .footer-contact .footer-contact-item {
     @apply
@@ -90,7 +90,6 @@
     h-8
 }
 
-
 .footer-copyright {
     @apply
     text-center
@@ -101,4 +100,18 @@
     border-t
     border-gray-700
     py-8
+}
+
+@screen sm {
+    .footer .footer-services {
+        @apply
+        gap-2
+        grid-flow-col
+    }
+
+    .footer-contact {
+        @apply
+        gap-24
+        flex-row
+    }
 }

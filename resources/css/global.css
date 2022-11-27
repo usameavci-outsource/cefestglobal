@@ -1,6 +1,8 @@
 @import "../../node_modules/tingle.js/dist/tingle.min.css";
 @import "../../node_modules/glightbox/dist/css/glightbox.min.css";
 
+@import "lineicons.css";
+
 @import "./components/google-search.css";
 @import "./components/get-offer-modal.css";
 @import "./components/contact-form-fields.css";
@@ -40,11 +42,13 @@
 .page {
     @apply
     mx-auto
-    w-[1366px]
+    w-full
+    max-w-[1366px]
 }
 
 .page-container {
     @apply
     mx-auto
-    w-[1366px]
+    w-full
+    max-w-[1366px]
 }

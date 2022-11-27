@@ -22,7 +22,7 @@
     @apply
     flex
     py-4
-    px-24
+    px-4
     w-[90%]
     mx-auto
     h-full
@@ -30,8 +30,9 @@
     items-center
     shadow-header
     justify-between
-    rounded-bl-5xl
-    rounded-br-5xl
+    rounded-bl-xl
+    rounded-br-xl
+    relative
 }
 
 .header-logo {
@@ -46,8 +47,17 @@
 
 .header-nav {
     @apply
+    z-10
     flex
-    items-center
+    py-3
+    gap-3
+    top-24
+    left-0
+    right-0
+    flex-col
+    absolute
+    rounded-xl
+    bg-[#efefef]
     justify-around
 }
 
@@ -60,12 +70,6 @@
     font-semibold
     cursor-pointer
     text-[#5d2166]
-}
-
-.header-nav a + a {
-    @apply
-    border-l
-    border-l-gray-700
 }
 
 .header-right {
@@ -121,4 +125,26 @@
 .header-white .header-search .header-search-submit i {
     @apply
     text-gray-700
+}
+
+@screen sm {
+    .header-main {
+        @apply
+        px-24
+        rounded-bl-5xl
+        rounded-br-5xl
+    }
+
+    .header-nav {
+        @apply
+        static
+        flex-row
+        items-center
+    }
+
+    .header-nav a + a {
+        @apply
+        border-l
+        border-l-gray-700
+    }
 }

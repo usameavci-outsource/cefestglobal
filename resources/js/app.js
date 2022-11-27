@@ -172,6 +172,17 @@ const initLogisticServicesScroll = () => {
     });
 };
 
+const initNav = () => {
+    const elmMenuNav = document.querySelector('#menu-nav');
+    const elmMenuToggle = document.querySelector('#menu-toggle');
+    if (!elmMenuNav || !elmMenuToggle) return;
+
+    elmMenuToggle.addEventListener('click', () => {
+        elmMenuNav.classList.toggle('hidden');
+    });
+};
+
+initNav();
 initSlider();
 initLightBox();
 initGetOffer();

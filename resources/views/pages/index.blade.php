@@ -38,9 +38,9 @@
                             {{ 'Teknolojik gelişimleri yakından takip ederek, müşterilerine değerli hizmetler sunan, gelişime sürekli yatırım yaparak, iş süreç ve modellerini sürekli geliştirmek isteyen, müşterilere sunduğu entegre lojistik çözümlerle öncü, yapıcı ve uluslararası tanınırlığı olan bir marka yaratmak.' }}
                         </div>
                     </div>
-                    <div class="box col-span-2">
+                    <div class="box sm:col-span-2">
                         <div class="box-title">{{ 'Değerlerimiz' }}</div>
-                        <div class="box-content items-start grid grid-cols-3 gap-8">
+                        <div class="box-content items-start grid grid-cols-1 sm:grid-cols-3 gap-8">
                             <div class="flex flex-col gap-2 text-center">
                                 <b>{{ 'Azimliyiz' }}</b>
                                 <div
@@ -90,7 +90,7 @@
         </div>
     </main>
 
-    <div class="h-64"></div>
+    <div class="hidden sm:flex h-64"></div>
 
     <x-footer/>
 </x-default-layout>

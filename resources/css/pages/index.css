@@ -9,8 +9,8 @@
 
 .page-index {
     @apply
-    mt-32
-    mb-24
+    mb-0
+    mt-12
 }
 
 .page-index .section-services {
@@ -35,8 +35,9 @@
     flex
     py-8
     mx-12
+    gap-8
     bg-white
-    flex-wrap
+    flex-col
     items-center
     justify-center
     rounded-5xl
@@ -46,34 +47,20 @@
 .page-index .services .services-item {
     @apply
     flex
-    p-12
     w-1/2
-    px-12
     items-center
     justify-center
 }
 
-.page-index .services .services-item:nth-child(3) {
-    @apply
-    border-t
-    border-gray-300
-}
-
-.page-index .services .services-item:nth-child(even) {
-    @apply
-    border-l
-    border-gray-300
-}
-
 .page-index .services .services-item img {
     @apply
-    h-20
+    h-auto
 }
 
 .page-index .section-mission-vision {
     @apply
-    pt-32
-    pb-32
+    py-48
+    pb-12
     bg-no-repeat
     bg-[length:50%]
     bg-[position:center_0rem]
@@ -83,21 +70,20 @@
 .page-index .mission-vision-inner {
     @apply
     grid
-    py-12
-    gap-24
-    grid-cols-2
+    px-12
+    gap-12
 }
 
 .page-index .mission-vision-inner .box {
     @apply
     flex
-    gap-4
     px-8
     py-6
+    gap-4
     flex-col
     bg-white
     items-center
-    rounded-[50px]
+    rounded-[25px]
     shadow-section-mission-vision
 }
 
@@ -113,15 +99,9 @@
     text-justify
 }
 
-
 .page-index .section-scopes {
     @apply
-    h-64
-    mt-40
-    mb-24
-    shadow
-    bg-[#ff7d26];
-    --tw-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.6);
+    hidden
 }
 
 .page-index .scopes {
@@ -167,4 +147,68 @@
 .page-index .scopes-item:nth-child(6) {
     @apply
     top-[-6rem]
+}
+
+@screen sm {
+    .page-index {
+        @apply
+        mb-24
+        mt-32
+    }
+
+    .page-index .services {
+        @apply
+        py-8
+        mx-12
+        gap-0
+        flex-row
+        flex-wrap
+        rounded-5xl
+    }
+
+    .page-index .services .services-item {
+        @apply
+        p-12
+    }
+
+    .page-index .services .services-item img {
+        @apply
+        h-20
+    }
+
+    .page-index .services .services-item:nth-child(3) {
+        @apply
+        border-t
+        border-gray-300
+    }
+
+    .page-index .services .services-item:nth-child(even) {
+        @apply
+        border-l
+        border-gray-300
+    }
+
+    .page-index .section-mission-vision {
+        @apply
+        pt-32
+        pb-32
+    }
+
+    .page-index .mission-vision-inner {
+        @apply
+        py-12
+        gap-24
+        grid-cols-2
+    }
+
+    .page-index .section-scopes {
+        @apply
+        flex
+        h-64
+        mt-40
+        mb-24
+        shadow
+        bg-[#ff7d26];
+        --tw-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.6);
+    }
 }
