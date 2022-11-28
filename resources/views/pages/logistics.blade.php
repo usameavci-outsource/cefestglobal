@@ -194,7 +194,7 @@
                             <div class="slider-content-wrap">
                                 <div class="slider-content-title">{{ 'Depolama Hizmet Çözüm Ortaklığı' }}</div>
                                 <div class="slider-content-text">
-                                    <div class="flex">
+                                    <div class="flex flex-col sm:flex-row">
                                         <div class="text-base pr-8 flex-1">{{ 'Cefest Global olarak, yükünüzü alıcıya
                                         gönderilmeden önce anlaşmalı olduğumuz çözüm ortaklarımız ile uygun fiyat ve
                                         güvenli hizmet anlayışımızla hizmetinizdeyiz. Kalite standartlarınızı ve kurumsal
@@ -277,7 +277,6 @@
                                         dökme yük gemilerine kadar hizmet verilmektedir. Limanda gübre, mısır, buğday, kepek,
                                         soya fasulyesi vb. tahıl ürünleri olan dökme yükler ile boru, rulo saç, demir, paletli,
                                         big bag\'li, sling bag\'li vb. genel yükler elleçlenmektedir.' }}</div>
-                                        <div class="text-base pr-8 flex-1"></div>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +323,7 @@
                 <div class="social-responsibility-bottom-line"></div>
             </div>
 
-            <hr class="border-transparent my-12">
+            <hr class="border-transparent my-12 hidden sm:block">
 
             {{--            <div class="slider-mini">--}}
             {{--                <div class="slider-mini-controls">--}}

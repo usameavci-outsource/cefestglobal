@@ -1,4 +1,6 @@
-.footer {
+.footer > .page-container {
+    @apply
+    px-0
 }
 
 .footer .footer-top .page-container {
@@ -97,9 +99,9 @@
 
 .footer-copyright .page-container {
     @apply
+    py-8
     border-t
     border-gray-700
-    py-8
 }
 
 @screen sm {

@@ -23,9 +23,9 @@
     flex
     py-4
     px-4
-    w-[90%]
-    mx-auto
+    w-full
     h-full
+    mx-auto
     bg-[#efefef]
     items-center
     shadow-header
@@ -131,6 +131,7 @@
     .header-main {
         @apply
         px-24
+        w-[90%]
         rounded-bl-5xl
         rounded-br-5xl
     }

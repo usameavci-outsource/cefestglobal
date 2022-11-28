@@ -56,6 +56,7 @@
     @apply
     py-4
     px-8
+    w-full
     text-2xl
     bg-black
     text-white
@@ -65,4 +66,11 @@
 .contact-form .contact-form-submit i {
     @apply
     font-bold
+}
+
+@screen sm {
+    .contact-form .contact-form-submit button {
+        @apply
+        w-auto
+    }
 }

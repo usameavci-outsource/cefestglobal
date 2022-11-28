@@ -1,6 +1,6 @@
 .get-offer-modal .tingle-modal-box {
     @apply
-    w-2/6
+    w-full
 }
 
 .get-offer-modal .tingle-modal-box__footer {
@@ -12,6 +12,7 @@
 
 .get-offer-modal .tingle-btn--black {
     @apply
+    m-0
     rounded
     bg-black
     text-white
@@ -20,4 +21,12 @@
 .get-offer-modal .tingle-btn--black[disabled] {
     @apply
     bg-black/[0.5]
+}
+
+
+@screen sm {
+    .get-offer-modal .tingle-modal-box {
+        @apply
+        w-2/6
+    }
 }

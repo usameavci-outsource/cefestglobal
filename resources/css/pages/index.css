@@ -16,7 +16,7 @@
 .page-index .section-services {
     @apply
     z-0
-    py-24
+    py-8
     relative
 }
 
@@ -34,13 +34,12 @@
     @apply
     flex
     py-8
-    mx-12
     gap-8
     bg-white
     flex-col
+    rounded-xl
     items-center
     justify-center
-    rounded-5xl
     shadow-section-services
 }
 
@@ -70,7 +69,6 @@
 .page-index .mission-vision-inner {
     @apply
     grid
-    px-12
     gap-12
 }
 
@@ -156,6 +154,11 @@
         mt-32
     }
 
+    .page-index .section-services {
+        @apply
+        py-24
+    }
+
     .page-index .services {
         @apply
         py-8
@@ -197,6 +200,7 @@
     .page-index .mission-vision-inner {
         @apply
         py-12
+        px-12
         gap-24
         grid-cols-2
     }

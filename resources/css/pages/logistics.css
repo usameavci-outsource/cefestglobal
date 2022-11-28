@@ -23,8 +23,9 @@
 .page-logistics .section-jumbotron {
     @apply
     flex
-    py-32
-    mt-32
+    py-6
+    px-12
+    mt-12
     bg-white
     items-center
     justify-center
@@ -37,7 +38,7 @@
 
 .page-logistics .section-features {
     @apply
-    py-48
+    py-24
 }
 
 .page-logistics .section-features-inner {
@@ -49,7 +50,7 @@
 .features {
     @apply
     flex
-    gap-8
+    gap-4
     flex-wrap
     text-white
     text-center
@@ -59,17 +60,17 @@
 
 .features .features-item {
     @apply
-    p-6
+    p-3
     bg-white
     shadow-md
-    rounded-4xl
+    rounded-2xl
     cursor-pointer
 }
 
 .features .features-item img {
     @apply
-    w-16
-    h-16
+    w-12
+    h-12
 }
 
 .page-logistics .section-intro-video {
@@ -78,14 +79,20 @@
     mt-12
     items-center
     bg-[#e5df67]
-    min-h-[50rem]
+    min-h-[14rem]
     justify-center
+}
+
+.page-logistics .section-intro-video img {
+    @apply
+    w-24
+    h-24
 }
 
 .page-logistics .section-transportation {
     @apply
-    pt-48
-    pb-56
+    pt-24
+    pb-80
     bg-no-repeat
     bg-[length:55%]
     bg-section-transportation
@@ -94,63 +101,38 @@
 
 .section-transportation .content-title {
     @apply
-    pl-24
-    mb-16
+    mb-6
     relative
-    text-8xl
+    text-5xl
     font-bold
     text-[#ff6600]
 }
 
-.section-transportation .content-title::before {
-    top: 60%;
-    right: 95%;
-    width: 15%;
-    content: '';
-    display: block;
-    position: absolute;
-    border-top: 1px solid #000;
-}
-
 .section-transportation .content-blocks {
     @apply
-    flex
-    gap-8
-    pb-40
+    overflow-hidden
 }
 
 .section-transportation .content-blocks .content-left {
     @apply
-    relative
-    w-[120rem]
+    float-left
 }
 
 .section-transportation .content-blocks .content-left img {
+    @apply
+    mr-4
+    mb-4
+    w-[130px]
 }
 
 .section-transportation .content-blocks .content-right {
     @apply
-    pt-8
     relative
-    after:block
-    after:left-0
-    after:border-b
-    after:absolute
-    after:w-[50rem]
-    after:content-['']
-    after:bottom-[5.5rem]
-    after:border-gray-700
 }
 
 .section-transportation .content-blocks .content-right p {
     @apply
-    pl-8
     text-lg
-}
-
-.section-transportation .content-blocks .content-right p::first-letter {
-    @apply
-    ml-16
 }
 
 .section-transportation .content-blocks .content-right p + p {
@@ -169,30 +151,18 @@
     w-full
 }
 
-
 .page-logistics .section-services {
 }
 
 .section-services .content-title-wrapper {
     @apply
-    flex
-    mb-16
-    items-center
-    justify-center
+    mb-8
+    px-6
 }
 
 .section-services .content-title {
     @apply
-    text-7xl
-    relative
-    after:block
-    after:border-b
-    after:absolute
-    after:w-[90%]
-    after:top-[50%]
-    after:right-[110%]
-    after:content-['']
-    after:border-gray-700
+    text-5xl
 }
 
 .section-services .slider {
@@ -202,9 +172,7 @@
 
 .section-services .slider .slider-content {
     @apply
-    mt-32
-    w-[65%]
-    mr-[5%]
+    block
 }
 
 .section-services .slider .slider-content .slider-content-wrap {
@@ -253,24 +221,22 @@
 
 .section-services .slider .slider-content .slider-content-list .slider-content-item {
     @apply
-    pl-8
     flex
+    p-8
     gap-8
     text-white
     items-center
     bg-[#898889]
-    rounded-tr-4xl
-    rounded-br-4xl
+    cursor-pointer
+    flex-col-reverse
     border-[#898889]
-    border-t-[0.8rem]
-    border-r-[0.8rem]
-    border-b-[0.8rem]
     shadow-slider-content-item
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-title {
     @apply
     text-3xl
+    text-center
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-text {
@@ -294,28 +260,15 @@
 .section-services .slider .slider-content .slider-content-list .slider-content-item.active {
     @apply
     z-10
-    pl-12
-    pr-4
-    py-4
     relative
     text-black
-    -mr-60
     border-white
     bg-[#e5df68]
-    rounded-tr-6xl
-    rounded-br-6xl
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-text {
     @apply
     block
-}
-
-.section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image {
-    @apply
-    p-12
-    w-[18rem]
-    h-[18rem]
 }
 
 .section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image .slider-content-image-default {
@@ -353,54 +306,31 @@
 
 .page-logistics .section-social-responsibility {
     @apply
-    pt-32
-    mb-32
+    py-8
     relative
-    rounded-2xl
     bg-[#b31110]
-    bg-no-repeat
-    bg-[length:40rem]
-    bg-section-social-responsibility
 }
 
 .section-social-responsibility .social-responsibility-title-wrapper {
     @apply
     flex
     mb-16
-    justify-end
     items-center
 }
 
 .section-social-responsibility .social-responsibility-title {
     @apply
-    mr-40
     text-5xl
     relative
     text-white
-    after:block
     font-semibold
-    after:border-b
-    after:absolute
-    after:w-full
-    after:top-[50%]
-    after:right-[105%]
-    after:content-['']
-    after:border-white
 }
 
 .section-social-responsibility .social-responsibility-text {
     @apply
-    pt-12
-    pb-24
-    pl-72
-    ml-72
+    pb-12
     text-xl
     text-white
-}
-
-.section-social-responsibility .social-responsibility-text p::first-letter {
-    @apply
-    ml-16
 }
 
 .section-social-responsibility .social-responsibility-text p + p {
@@ -410,12 +340,7 @@
 
 .section-social-responsibility .social-responsibility-bottom-line {
     @apply
-    block
-    w-3/6
-    right-0
-    absolute
-    border-t
-    border-white
+    hidden
 }
 
 .page-logistics .section-contact {
@@ -670,4 +595,234 @@
 .slider-mini .slider-mini-dots-item.active {
     @apply
     bg-white
+}
+
+@screen sm {
+    .page-logistics .section-jumbotron {
+        @apply
+        px-0
+        py-32
+        mt-32
+    }
+
+    .page-logistics .section-features {
+        @apply
+        py-48
+    }
+
+    .features {
+        @apply
+        gap-8
+    }
+
+    .features .features-item {
+        @apply
+        p-6
+        rounded-4xl
+    }
+
+    .features .features-item img {
+        @apply
+        w-16
+        h-16
+    }
+
+    .page-logistics .section-intro-video {
+        @apply
+        min-h-[50rem]
+    }
+
+    .page-logistics .section-intro-video img {
+        @apply
+        w-auto
+        h-auto
+    }
+
+    .page-logistics .section-transportation {
+        @apply
+        pt-48
+        pb-56
+    }
+
+    .section-transportation .content-title {
+        @apply
+        pl-24
+        mb-16
+        text-8xl
+    }
+
+    .section-transportation .content-title::before {
+        top: 60%;
+        right: 95%;
+        width: 15%;
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 1px solid #000;
+    }
+
+    .section-transportation .content-blocks {
+        @apply
+        flex
+        gap-8
+        pb-40
+    }
+
+    .section-transportation .content-blocks .content-left {
+        @apply
+        relative
+        w-[120rem]
+    }
+
+    .section-transportation .content-blocks .content-left img {
+        @apply
+        m-0
+        w-auto
+    }
+
+    .section-transportation .content-blocks .content-right {
+        @apply
+        pt-8
+        after:block
+        after:left-0
+        after:border-b
+        after:absolute
+        after:w-[50rem]
+        after:content-['']
+        after:bottom-[5.5rem]
+        after:border-gray-700
+    }
+
+    .section-transportation .content-blocks .content-right p {
+        @apply
+        pl-8
+    }
+
+    .section-transportation .content-blocks .content-right p::first-letter {
+        @apply
+        ml-16
+    }
+
+    .section-services .content-title-wrapper {
+        @apply
+        flex
+        mb-16
+        items-center
+        justify-center
+    }
+
+    .section-services .content-title {
+        @apply
+        text-7xl
+        relative
+        after:block
+        after:border-b
+        after:absolute
+        after:w-[90%]
+        after:top-[50%]
+        after:right-[110%]
+        after:content-['']
+        after:border-gray-700
+    }
+
+    .section-services .slider .slider-content {
+        @apply
+        mt-32
+        w-[65%]
+        mr-[5%]
+    }
+
+    .section-services .slider .slider-content .slider-content-list .slider-content-item {
+        @apply
+        pl-8
+        flex-row
+        rounded-tr-4xl
+        rounded-br-4xl
+        border-t-[0.8rem]
+        border-r-[0.8rem]
+        border-b-[0.8rem]
+    }
+
+    .section-services .slider .slider-content .slider-content-list .slider-content-title {
+        @apply
+        text-left
+    }
+
+    .section-services .slider .slider-content .slider-content-list .slider-content-item.active {
+        @apply
+        z-10
+        pl-12
+        pr-4
+        py-4
+        relative
+        text-black
+        -mr-60
+        border-white
+        bg-[#e5df68]
+        rounded-tr-6xl
+        rounded-br-6xl
+    }
+
+    .section-services .slider .slider-content .slider-content-list .slider-content-item.active .slider-content-image {
+        @apply
+        p-12
+        w-[18rem]
+        h-[18rem]
+    }
+
+    .page-logistics .section-social-responsibility {
+        @apply
+        px-0
+        pb-0
+        pt-32
+        mb-32
+        rounded-2xl
+        bg-no-repeat
+        bg-[length:40rem]
+        bg-section-social-responsibility
+    }
+
+    .section-social-responsibility .social-responsibility-title-wrapper {
+        @apply
+        flex
+        mb-16
+        justify-end
+        items-center
+    }
+
+    .section-social-responsibility .social-responsibility-title {
+        @apply
+        mr-40
+        after:block
+        after:border-b
+        after:absolute
+        after:w-full
+        after:top-[50%]
+        after:right-[105%]
+        after:content-['']
+        after:border-white
+    }
+
+    .section-social-responsibility .social-responsibility-text {
+        @apply
+        pt-12
+        pb-24
+        pl-72
+        ml-72
+    }
+
+    .section-social-responsibility .social-responsibility-bottom-line {
+        @apply
+        block
+        w-3/6
+        right-0
+        absolute
+        border-t
+        border-white
+    }
+
+    .section-social-responsibility .social-responsibility-text p::first-letter {
+        @apply
+        ml-16
+    }
 }

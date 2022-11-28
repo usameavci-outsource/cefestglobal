@@ -19,8 +19,8 @@
 .page-technology .section-jumbotron {
     @apply
     flex
-    py-24
-    mt-32
+    p-12
+    mt-12
     bg-white
     items-center
     justify-center
@@ -28,12 +28,12 @@
 
 .page-technology .section-jumbotron img {
     @apply
-    h-48
+    h-auto
 }
 
 .page-technology .section-under-construction {
     @apply
-    py-40
+    py-12
 }
 
 .page-technology .section-under-construction-wrap {
@@ -47,5 +47,28 @@
 
 .page-technology .section-under-construction h2 {
     @apply
-    text-7xl
+    text-4xl
+}
+
+@screen sm {
+    .page-technology .section-jumbotron {
+        @apply
+        px-0
+        mt-32
+    }
+
+    .page-technology .section-jumbotron img {
+        @apply
+        h-48
+    }
+
+    .page-technology .section-under-construction {
+        @apply
+        py-40
+    }
+
+    .page-technology .section-under-construction h2 {
+        @apply
+        text-7xl
+    }
 }

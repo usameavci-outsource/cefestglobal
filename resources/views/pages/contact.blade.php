@@ -10,7 +10,7 @@
             <div class="page-container">
                 <div class="text-6xl mb-12 font-bold">{{ 'Bize Ulaşın' }}</div>
 
-                <div class="grid grid-cols-4 gap-32">
+                <div class="grid sm:grid-cols-4 gap-32">
                     <div class="col-span-2">
                         <h4 class="text-2xl font-semibold mb-12">
                             {{ 'Cefest Lojistik Bilişim Danışmanlık Ve Ticaret Limited Şirketi' }}

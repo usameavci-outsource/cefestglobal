@@ -48,7 +48,15 @@
 
 .page-container {
     @apply
-    mx-auto
+    px-6
     w-full
+    mx-auto
     max-w-[1366px]
+}
+
+@screen sm {
+    .page-container {
+        @apply
+        px-0
+    }
 }
