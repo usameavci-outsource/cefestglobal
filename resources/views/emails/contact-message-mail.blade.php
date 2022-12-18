@@ -1,8 +1,17 @@
 @component('mail::message')
     <h1>Contact Form Message</h1>
 
-    <h3>Sender Information</h3>
-    <pre>{{ $sender_name }} ({{ $sender_email }})</pre>
+    <h3>Subject</h3>
+    <pre>{{ $message_subject->getAttribute('name') ?? '-' }}</pre>
+
+    <h3>Sender Name</h3>
+    <pre>{{ $sender_name ?? '-' }}</pre>
+
+    <h3>Sender Email</h3>
+    <pre>{{ $sender_email ?? '-' }}</pre>
+
+    <h3>Phone Number</h3>
+    <pre>{{ $sender_phone ?? '-' }}</pre>
 
     <br>
 

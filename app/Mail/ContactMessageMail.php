@@ -3,24 +3,31 @@
 namespace App\Mail;
 
 use Illuminate\Mail\Mailable;
+use App\Models\ContactSubject;
 
 class ContactMessageMail extends Mailable
 {
 
-    public string $message_text;
-    public string $sender_name;
-    public string $sender_email;
+    public ?string $sender_name;
+    public ?string $sender_phone;
+    public ?string $sender_email;
+
+    public ?ContactSubject $message_subject;
+    public ?string         $message_text;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($sender_email, $sender_name, $message_text)
+    public function __construct($sender_email, $sender_phone, $sender_name, ContactSubject $message_subject, $message_text)
     {
-        $this->message_text = $message_text;
         $this->sender_name  = $sender_name;
         $this->sender_email = $sender_email;
+        $this->sender_phone = $sender_phone;
+
+        $this->message_subject = $message_subject;
+        $this->message_text    = $message_text;
     }
 
     /**

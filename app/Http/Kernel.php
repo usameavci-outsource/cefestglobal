@@ -26,11 +26,9 @@ use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
 use Illuminate\Foundation\Http\Middleware\ValidatePostSize;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments;
-use RenatoMarinho\LaravelPageSpeed\Middleware\DeferJavascript;
 use RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes;
+use RenatoMarinho\LaravelPageSpeed\Middleware\DeferJavascript;
 use RenatoMarinho\LaravelPageSpeed\Middleware\InsertDNSPrefetch;
-use RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace;
 use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
 
 class Kernel extends HttpKernel
@@ -54,10 +52,10 @@ class Kernel extends HttpKernel
             InlineCss::class,
             ElideAttributes::class,
             InsertDNSPrefetch::class,
-            RemoveComments::class,
-            // TrimUrls::class,
-            // RemoveQuotes::class,
-            CollapseWhitespace::class, // Note: This middleware invokes "RemoveComments::class" before it runs.
+            //            RemoveComments::class,
+            //            TrimUrls::class,
+            //            RemoveQuotes::class,
+            //            CollapseWhitespace::class, // Note: This middleware invokes "RemoveComments::class" before it runs.
             DeferJavascript::class,
         ];
 
